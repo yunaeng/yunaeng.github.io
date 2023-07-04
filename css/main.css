@@ -40,7 +40,7 @@
 
 .menu {
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   align-self: flex-start;
   top: 13%;
   left: 3%;
