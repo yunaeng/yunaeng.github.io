@@ -160,6 +160,8 @@ loadMusic()
     const music = json.music;
     prepareSetlist(music);
     showTitle();
+    playSong();
+    played = true;
     musicBtns.addEventListener("click", onClickBtns);
 
   });
