@@ -134,6 +134,7 @@ function onClickBtns(event) {
 function playSong() {
   const song = setList[position].song;
   song.play();
+  song.volume = 0.3
 }
 
 function stopSong() {
