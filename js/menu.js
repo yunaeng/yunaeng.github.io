@@ -3,7 +3,6 @@ const menuContent = document.querySelector(".menu__content");
 const headerBtn = document.querySelector(".menu__header__btn ");
 const headerText = document.querySelector(".menu__header__text");
 const menuHome = document.querySelector(".menu-home");
-const menuHometwo = document.querySelector(".menu-hometwo");
 const menuMovie = document.querySelector(".menu-movie");
 const menuJanuary = document.querySelector(".menu-January");
 const menuFebruary = document.querySelector(".menu-February");
@@ -20,7 +19,6 @@ const menuDecember = document.querySelector(".menu-December");
 const menuVertical = document.querySelector(".menu__vertical");
 menuHeader.addEventListener("click", onClickMenuHeader);
 menuContent.addEventListener("click", onClickMenuContent)
-menuHometwo.addEventListener("click", onClickHome)
 
 let clicked = false;
 let duration = 0;
@@ -228,23 +226,6 @@ function onClickMenuContent(event) {
         behavior: "smooth",
         left: 0
       });
-      break;
-    default:
-      throw Error(`Click Wrong Button`);
-  }
-}
-
-function onClickHome(event) {
-  const target = event.target;
-  const dataset = target.dataset;
-  const value = dataset.value;
-  if (value === undefined) {
-    return;
-  }
-  switch (value) {
-    case "Hometwo":
-      const headertwo = document.querySelector(".header");
-      headertwo.scrollIntoView({ behavior: "smooth" });
       break;
     default:
       throw Error(`Click Wrong Button`);
