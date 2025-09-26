@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>청년반 사진첩</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/background.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="year-select">
+    <h1>청년반 사진첩 연도 선택</h1>
+    <div class="year-buttons">
+      <button class="year-btn" onclick="goToYear(2023)">2023</button>
+      <button button class="year-btn" onclick="goToYear(2024)">2024</button>
+      <button class="year-btn" onclick="goToYear(2025)">2025</button>
+    </div>
+  </div>
+
+  <script>
+    function goToYear(year) {
+      window.location.href = `year.html?year=${year}`;
+    }
+  </script>
+</body>
+</html>

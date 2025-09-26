@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>사진첩</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 상단 히어로 -->
+  <div class="header">
+    <div class="title" id="title"></div>
+    <button class="back-btn" onclick="goBack()">← 뒤로가기</button>
+
+    <!-- 메뉴 열기 버튼(좌상단) -->
+    <button class="menu-open" id="menuOpen" aria-controls="sidePanel" aria-expanded="false">☰ Menu</button>
+  </div>
+
+  <!-- 왼쪽 패널 & 오버레이 -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="side-panel" id="sidePanel" aria-hidden="true">
+    <div class="panel-header">
+      <button class="panel-close" id="panelClose" aria-label="Close">✕ Close</button>
+    </div>
+    <nav class="panel-nav">
+      <a class="panel-link" href="index.html">Home</a>
+      <div class="panel-section">
+        <div class="panel-title">Photo</div>
+        <ul class="month-list" id="monthList"><!-- JS가 1~12월 생성 --></ul>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="accordion"></main>
+
+  <!-- 사진 확대용 라이트박스 -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-btn lb-close" id="lbClose" aria-label="닫기">✕</button>
+    <button class="lb-btn lb-prev"  id="lbPrev"  aria-label="이전">‹</button>
+    <img id="lightbox-img" src="" alt="확대된 사진">
+    <button class="lb-btn lb-next"  id="lbNext"  aria-label="다음">›</button>
+  </div>
+
+  <script src="js/year.js"></script>
+  <script src="js/background.js" defer></script>
+</body>
+</html>

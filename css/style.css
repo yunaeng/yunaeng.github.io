@@ -1,0 +1,26 @@
+@import url(year.css);
+
+
+
+
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("font/온글잎\ 데이지.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+h1 {
+  font-size: clamp(100px, 3vw, 40px);
+}
+h2 {
+  font-size: clamp(20px, 2.5vw, 32px);
+}
+p {
+  font-size: clamp(15px, 1.5vw, 18px);
+}

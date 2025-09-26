@@ -1,0 +1,37 @@
+.year-select {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.year-buttons {
+  display: flex;
+  justify-content: center;   /* 가운데 정렬 */
+  gap: 20px;                 /* 버튼 사이 간격 */
+  margin-top: 20px;
+}
+
+.year-btn {
+  font-size: 2rem;
+  padding: 15px 30px;
+  border: none;
+  font-family: "MyCustomFont", sans-serif;
+  border-radius: 12px;
+  background: #805ad5;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.year-btn:hover {
+  background: #6b46c1;
+}
+
+body {
+  margin: 0;
+  background-color: #e9d8fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
