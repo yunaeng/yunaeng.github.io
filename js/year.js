@@ -26,7 +26,7 @@ const monthList = document.getElementById("monthList");
 const accordion = document.getElementById("accordion");
 
 // 갤러리에서 불러올 최대 파일 수 (예: 1~20까지 시도)
-const maxPhotos = 20;
+const maxPhotos = 30;
 
 for (let m = 1; m <= 12; m++) {
   // 메뉴 항목
